@@ -1,0 +1,6 @@
+nome = input('fale seu nome:')
+idade = input('fale sua idade:')
+print(nome,idade)
+print(nome,idade,sep='we')
+print(nome,idade,end='io')
+print(nome,idade,sep='we',end='io')
