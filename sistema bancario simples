@@ -1,0 +1,27 @@
+menu = ('''
+================ MENU ===============
+opção [1] saquar
+opção [2] depositar
+opção [3] ver extrato
+opção [4] sair'''
+)
+conta = 0
+extrato = 0
+print(menu)
+
+while True:
+    va = int(input('escolha:'))
+    if va == 1:
+        saque = int(input('deseja saquar quanto:'))
+        if saque > 0 and saque < conta:
+            conta -= saque
+        else:
+            print('erro')
+    if va == 2:
+        deposito = int(input('deseja depositar quanto:'))
+        if deposito > 0:
+           conta +=  deposito
+    if va == 3:
+       print (f'sua conta tem r${conta:.2f}')
+    if va == 4:
+        break
